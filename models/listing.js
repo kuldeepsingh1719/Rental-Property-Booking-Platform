@@ -10,12 +10,8 @@ const listeningSchema = new Schema({
     },    
     description: String,
     image: {
-        filename: { type: String, },
-        url: { 
-          type: String, 
-          default: "https://unsplash.com/photos/couple-holds-hands-admiring-an-ancient-monument-DGMKI9_pMMk",
-          set: (v) => v === "" ? "https://unsplash.com/photos/couple-holds-hands-admiring-an-ancient-monument-DGMKI9_pMMk" : v
-        }
+       filename: String,
+       url: String,
     },    
     price: Number,
     location: String,
